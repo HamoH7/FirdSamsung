@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         timePassed = ((timeText.indexOf(0)*10+timeText.indexOf(1))*3600)+((timeText.indexOf(3)*10+timeText.indexOf(4))*60)+((timeText.indexOf(6)*10+timeText.indexOf(7)));
         timePassedsp = getApplicationContext().getSharedPreferences("TIMEPASSED", MODE_PRIVATE);
         editor = timePassedsp.edit();
-        mediaPlayer = MediaPlayer.create(this, R.raw.fonidzen);
+        mediaPlayer = MediaPlayer.create(this, R.raw.songfon);
         mediaPlayer.start();
         setContentView(new MyDraw(this, timePassed - timePassedsp.getInt("TIMEPASSED",timePassed)));
         //setContentView(R.layout.shopskin);
