@@ -1276,9 +1276,8 @@ public class DrawThread extends Thread {
                     }
                     //foin
                     paintFoin.setTextSize((float) canvas.getWidth() * 20/1050);
-                    for (int i = 1; i < 5; i++) getFoinBitmap[i] = Bitmap.createScaledBitmap(getFoinBitmap[i],  canvas.getWidth() * 102 / 1050, canvas.getHeight() * 102 / 540, true);
-                    for (int i = 5; i < 8; i++) getFoinBitmap[i] = Bitmap.createScaledBitmap(getFoinBitmap[i],  canvas.getWidth() * 73 / 1050, canvas.getHeight() * 73 / 540, true);
-                    if(!getFoinTimeIsPassed && gettingFoin) {
+                    for (int i = 1; i < 8; i++) getFoinBitmap[i] = Bitmap.createScaledBitmap(getFoinBitmap[i],  canvas.getWidth(), canvas.getHeight(), true);
+                     if(!getFoinTimeIsPassed && gettingFoin) {
                         new GetFoinThread().start();
                         getFoinTimeIsPassed = true;
                     }
@@ -1384,55 +1383,23 @@ public class DrawThread extends Thread {
                     float poopY = (float) (canvas.getHeight() * 309 / 540);
                     float poopWidth = (float) (canvas.getWidth() * 94 / 1050);
                     float poopHeight = (float) (canvas.getHeight() * 94 / 540);
-                    for (int i = 1; i < 5; i++) {
-                        poopBitmap[i] = Bitmap.createScaledBitmap(poopBitmap[i], canvas.getWidth() * 94 / 1050, canvas.getHeight() * 94 / 540, true);
-                    }
+                    for (int i = 1; i < 5; i++) poopBitmap[i] = Bitmap.createScaledBitmap(poopBitmap[i], canvas.getWidth() * 94 / 1050, canvas.getHeight() * 94 / 540, true);
                     for (int i = 1; i < 11; i++) {
                         poopingBitmapUsual[i] = Bitmap.createScaledBitmap(poopingBitmapUsual[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDTSH[i] = Bitmap.createScaledBitmap(poopingBitmapDTSH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDSH[i] = Bitmap.createScaledBitmap(poopingBitmapDSH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDTH[i] = Bitmap.createScaledBitmap(poopingBitmapDTH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDTS[i] = Bitmap.createScaledBitmap(poopingBitmapDTS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapTHS[i] = Bitmap.createScaledBitmap(poopingBitmapTHS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDH[i] = Bitmap.createScaledBitmap(poopingBitmapDH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDT[i] = Bitmap.createScaledBitmap(poopingBitmapDT[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapDS[i] = Bitmap.createScaledBitmap(poopingBitmapDS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapD[i] = Bitmap.createScaledBitmap(poopingBitmapD[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapTH[i] = Bitmap.createScaledBitmap(poopingBitmapTH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapHS[i] = Bitmap.createScaledBitmap(poopingBitmapHS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapTS[i] = Bitmap.createScaledBitmap(poopingBitmapTS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapT[i] = Bitmap.createScaledBitmap(poopingBitmapT[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapH[i] = Bitmap.createScaledBitmap(poopingBitmapH[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
-                    }
-                    for (int i = 1; i < 11; i++) {
                         poopingBitmapS[i] = Bitmap.createScaledBitmap(poopingBitmapS[i], (int) (canvas.getWidth() * birdWidth), (int) (canvas.getHeight() * birdHeight), true);
                     }
                     if (m5 == 0) {
